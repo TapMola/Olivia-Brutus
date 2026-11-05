@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url('assets/red-hat-text.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Red Hat Text', Arial, sans-serif;
+  color: #211C19;
+  background: #F4F0EB;
+  --paper: #F4F0EB;
+  --line: #D8C9B9;
+  --muted: #77716A;
+  --button: #FAF8F5;
+  --accent: #8B6247;
+  --walnut: #38271F;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { min-height: 100vh; min-height: 100dvh; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+img { display: block; max-width: 100%; height: auto; }
+
+.page-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.business-card { width: 100%; max-width: 440px; background: var(--paper); }
+.card-content { padding: 18px 26px 24px; }
+.brand { text-align: center; padding: 30px 26px 9px; }
+.brand::after { content: ""; display: block; width: 40px; height: 1px; margin: 17px auto 0; background: var(--accent); }
+.brand h1 img { mix-blend-mode: multiply; }
+.brand h1 { margin: 0 auto; width: 272px; max-width: 100%; font-size: 24px; font-weight: 400; }
+.brand p { margin: 12px 0 0; font-size: 12px; letter-spacing: .035em; color: var(--muted); }
+
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  min-height: 66px;
+  padding: 11px 8px;
+  border: 1px solid var(--line);
+  background: var(--button);
+  min-width: 0;
+  text-align: center;
+}
+.contact-button > span { font-size: 10px; letter-spacing: .13em; line-height: 1.3; }
+.contact-button svg { width: 19px; height: 19px; color: var(--walnut); }
+
+svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.wide-button, .review-button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 49px;
+  padding: 12px 15px;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  background: var(--button);
+  font-size: 12px;
+  letter-spacing: .02em;
+  line-height: 1.4;
+}
+.maps-button { margin-top: 15px; }
+.wide-button > span, .review-button > span { min-width: 0; overflow-wrap: anywhere; }
+.maps-button > svg, .review-button > svg { color: var(--walnut); }
+.maps-button small { display: block; font-size: 10px; color: var(--muted); margin-top: 3px; line-height: 1.5; letter-spacing: 0; }
+.wide-button > svg:last-child, .review-button > svg:last-child { width: 14px; height: 14px; margin-left: auto; }
+.save-button { background: var(--walnut); border-color: var(--walnut); color: #FAF8F5; min-height: 49px; }
+.save-button > svg { width: 20px; height: 20px; margin-left: 0; }
+.review-button > svg:first-child { width: 18px; height: 18px; }
+a { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+
+@media (hover: hover) {
+  .contact-button:hover, .maps-button:hover, .review-button:hover { background: #EFE7DD; border-color: var(--accent); }
+  .save-button:hover { background: #50392C; border-color: #50392C; }
+}
+
+@media (max-width: 480px) {
+  .page-shell { display: block; padding: 0; }
+  .business-card { max-width: none; }
+  .card-content { padding: 18px 24px calc(24px + env(safe-area-inset-bottom)); }
+  .brand { padding: 30px 24px 9px; }
+  .brand h1 { width: 266px; }
+}
+
+@media (max-width: 340px) {
+  .card-content { padding-right: 18px; padding-left: 18px; }
+  .brand h1 { width: 242px; }
+  .brand p { font-size: 11px; }
+  .maps-button small { font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+}

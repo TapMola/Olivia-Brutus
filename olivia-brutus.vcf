@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Olivia Brutus;;;
+FN:Olivia Brutus
+ORG:Olivia Brutus
+TEL;TYPE=WORK,VOICE:+34914357451
+EMAIL;TYPE=INTERNET,WORK:info@oliviabrutus.com
+URL:https://oliviabrutus.com/
+ADR;TYPE=WORK;CHARSET=UTF-8:;;Paseo de la Castellana 176;Madrid;;28046;Espa
+ ña
+END:VCARD
