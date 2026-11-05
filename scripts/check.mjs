@@ -7,7 +7,8 @@ for (const [, attributes] of links) {
   const href = attributes.match(/href="([^"]+)"/)?.[1];
   assert(href && href !== '#');
   if (href.startsWith('https:')) assert(attributes.includes('noopener noreferrer'));
-  if (href.includes('/maps/')) {
+  if (attributes.includes('review-button')) assert.equal(href.replaceAll('&amp;', '&'), 'https://www.google.com/maps/place/Olivia+Brutus/@40.4603665,-3.6892061,876m/data=!3m1!1e3!4m8!3m7!1s0xd4229002ddf7aa3:0x6e650d11213ddac5!8m2!3d40.4603665!4d-3.6892061!9m1!1b1!16s%2Fg%2F11ldv3_sd4?entry=ttu&g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D');
+  if (attributes.includes('maps-button')) {
     const url = new URL(href.replaceAll('&amp;', '&'));
     assert.equal(url.searchParams.get('api'), '1');
     assert.equal(url.searchParams.get('query_place_id'), 'ChIJo3rfLQApQg0Rxdo9IRENZW4');

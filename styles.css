@@ -33,7 +33,9 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 32px 20px;
 }
 
-.business-card { width: 100%; max-width: 440px; background: var(--paper); }
+.business-card { position: relative; width: 100%; max-width: 440px; background: var(--paper); }
+/* Detalle nogal integrado en el lateral, sin ocupar ancho del contenido. */
+.business-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 7px; background: #A78468; pointer-events: none; }
 .card-content { padding: 18px 26px 24px; }
 .brand { text-align: center; padding: 30px 26px 9px; }
 .brand::after { content: ""; display: block; width: 40px; height: 1px; margin: 17px auto 0; background: var(--accent); }
@@ -98,7 +100,7 @@ a { transition: background-color .18s ease, border-color .18s ease, color .18s e
 }
 
 @media (max-width: 480px) {
-  .page-shell { display: block; padding: 0; }
+  .page-shell { display: block; padding: calc(30px + env(safe-area-inset-top, 0px)) 0 0; }
   .business-card { max-width: none; }
   .card-content { padding: 18px 24px calc(24px + env(safe-area-inset-bottom)); }
   .brand { padding: 30px 24px 9px; }
