@@ -44,7 +44,7 @@ Validación tras el cambio: build correcto; comparación exacta de los siete `hr
 
 ## Ajuste final: encabezado sin fotografía
 
-La versión actual elimina la fotografía de la página y coloca el logotipo existente y «Boutique multimarca · Madrid» dentro de un encabezado de fondo #EAE6E1. Fondo general #F7F5F2, texto #111111, secundarios #77736D y bordes #DDD9D3. No se incorpora ninguna imagen nueva. Los WebP anteriores quedan como recursos históricos sin referencia en la página. Encabezado compacto y a todo el ancho, seguido de 18 px hasta la cuadrícula. Comparación exacta de todo el bloque de navegación (incluidos iconos y enlaces) y vCard sin cambios; build correcto.
+La versión actual elimina la fotografía de la página y coloca el logotipo existente y «Boutique Multimarca · Madrid» dentro de un encabezado de fondo #EAE6E1. Fondo general #F7F5F2, texto #111111, secundarios #77736D y bordes #DDD9D3. No se incorpora ninguna imagen nueva. Los WebP anteriores quedan como recursos históricos sin referencia en la página. Encabezado compacto y a todo el ancho, seguido de 18 px hasta la cuadrícula. Comparación exacta de todo el bloque de navegación (incluidos iconos y enlaces) y vCard sin cambios; build correcto.
 
 ## Refinamiento cálido final
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" shape-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="leaf-tone" x1="140" y1="20" x2="370" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#594434" stop-opacity=".72"/>
+      <stop offset=".46" stop-color="#594434" stop-opacity="1"/>
+      <stop offset="1" stop-color="#594434" stop-opacity=".62"/>
+    </linearGradient>
+    <g id="branch" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M371-18C339 25 336 68 330 108C325 153 308 196 287 239C263 288 244 334 218 381C208 400 196 419 184 440" fill="none" stroke="#594434" stroke-width="1.8"/>
+      <g fill="none" stroke="#594434" stroke-width=".9">
+        <path d="M333 73Q327 61 322 55M326 123Q338 113 344 105M309 182Q299 171 293 162M288 236Q305 223 314 215M267 282Q253 269 248 260M241 337Q260 324 269 316M215 386Q206 375 202 365"/>
+      </g>
+      <path d="M324 60C311 57 294 43 284 25C275 9 268-8 267-23C285-15 307-2 319 17C329 32 331 49 324 60Z"/>
+      <path d="M339 110C341 94 353 78 368 68C382 58 393 53 405 40C402 58 393 81 378 96C365 108 352 113 339 110Z"/>
+      <path d="M298 168C280 167 259 151 245 134C231 117 224 96 217 78C233 85 250 91 266 102C286 116 301 144 298 168Z"/>
+      <path d="M310 220C320 202 339 189 357 182C375 175 389 175 404 167C393 185 378 204 359 215C341 225 323 227 310 220Z"/>
+      <path d="M252 266C235 261 218 247 207 229C196 212 192 193 185 175C204 182 225 191 239 209C252 226 259 249 252 266Z"/>
+      <path d="M265 322C277 305 296 296 314 293C331 290 345 292 360 286C349 302 330 317 311 322C291 328 274 327 265 322Z"/>
+      <path d="M205 371C191 368 173 352 164 336C154 319 149 299 141 282C161 290 179 299 192 316C205 333 211 355 205 371Z"/>
+      <path d="M190 430C178 425 167 410 162 396C157 383 157 370 153 358C168 366 181 377 187 392C194 408 195 420 190 430Z"/>
+    </g>
+  </defs>
+  <!-- A faint vector penumbra: no bitmap, blur filter or fixed-resolution filter surface. -->
+  <use href="#branch" fill="url(#leaf-tone)" stroke="#594434" stroke-width="2.6" stroke-linejoin="round" opacity=".008"/>
+  <use href="#branch" fill="url(#leaf-tone)" stroke="#594434" stroke-width="1.2" stroke-linejoin="round" opacity=".011"/>
+  <use href="#branch" fill="url(#leaf-tone)" opacity=".052"/>
+</svg>

@@ -33,7 +33,12 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 32px 20px;
 }
 
-.business-card { position: relative; width: 100%; max-width: 440px; background: var(--paper); }
+.business-card {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: var(--paper) url('assets/botanical-shadow.svg') no-repeat right top / 340px 425px;
+}
 .card-content { padding: 18px 26px 24px; }
 .brand { text-align: center; padding: 30px 26px 27px; }
 .brand h1 img { mix-blend-mode: multiply; }
